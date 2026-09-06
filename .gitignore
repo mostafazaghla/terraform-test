@@ -1,0 +1,15 @@
+# Terraform state files — never commit these
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Variable files may contain secrets
+*.tfvars
+!terraform.tfvars.example
+
+# Generated files from this project
+generated/
+
+# macOS
+.DS_Store
